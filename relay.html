@@ -1,29 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relay Module - TraceCore Labs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">
+        <img src="logo.png">
+        <span>TraceCore Labs</span>
+    </div>
+</header>
+
+<!-- PRODUCT HERO -->
 <section class="product-hero">
 
     <div class="product-wrapper">
 
-        <!-- LEFT: VIDEO -->
+        <!-- VIDEO SECTION -->
         <div class="video-box">
             <video autoplay muted loop playsinline>
                 <source src="relay.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- RIGHT: INFO -->
+        <!-- PRODUCT DETAILS -->
         <div class="product-details">
             <h1>4-Channel Relay Control PCB</h1>
-            <p>High-performance relay module designed for automation, robotics, and IoT systems.</p>
+
+            <p>
+                High-performance custom relay module designed for automation,
+                robotics, and IoT systems. Built with precision PCB design using EasyEDA.
+            </p>
 
             <ul>
                 <li>✔ 4 Channel Relay Output</li>
                 <li>✔ High Voltage Switching</li>
                 <li>✔ ESP32 / Arduino Compatible</li>
-                <li>✔ Designed in EasyEDA</li>
+                <li>✔ Industrial-grade PCB Design</li>
             </ul>
 
-            <button>Request Quote</button>
+            <button onclick="scrollToContact()">Request Quote</button>
         </div>
 
     </div>
 
 </section>
+
+<!-- EXTRA SECTION -->
+<section class="highlight">
+    <h2>Engineered for Reliability</h2>
+    <p>Designed for high performance, durability, and seamless integration into your embedded systems.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: tracecorelabs@gmail.com</p>
+    <p>Phone: +91 XXXXXXXX</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 TraceCore Labs. All Rights Reserved.</p>
+</footer>
+
+<script>
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
