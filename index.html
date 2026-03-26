@@ -19,7 +19,6 @@
         <a href="#">Home</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#product">Product</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -52,41 +51,6 @@
     </div>
 </section>
 
-<!-- PRODUCT -->
-<section id="product">
-    <h2>Featured Product</h2>
-
-    <div class="product-container">
-
-        <!-- VIDEO -->
-        <div class="product-video">
-            <video autoplay muted loop playsinline>
-                <source src="relay.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <!-- INFO -->
-        <div class="product-info">
-            <h3>4-Channel Relay Module</h3>
-
-            <p>
-                Custom designed PCB using EasyEDA. Ideal for automation,
-                IoT systems, and industrial applications.
-            </p>
-
-            <ul>
-                <li>✔ 4 Channel Relay Output</li>
-                <li>✔ High Voltage Isolation</li>
-                <li>✔ Arduino / ESP32 Compatible</li>
-                <li>✔ Industrial Grade Design</li>
-            </ul>
-
-            <button onclick="goToRelay()">View Product</button>
-        </div>
-
-    </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact Us</h2>
@@ -99,17 +63,12 @@
     <p>© 2026 TraceCore Labs. All Rights Reserved.</p>
 </footer>
 
-<!-- WHATSAPP BUTTON -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
 
-<!-- SCRIPT -->
 <script>
 function scrollToContact() {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-}
-
-function goToRelay() {
-    window.location.href = "relay.html";
 }
 </script>
 
