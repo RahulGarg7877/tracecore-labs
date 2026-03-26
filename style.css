@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #0a0f1c;
@@ -14,11 +15,13 @@ body {
 /* NAVBAR */
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: rgba(0,0,0,0.6);
+    background: #0d1324;
 }
 
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
@@ -31,72 +34,125 @@ header {
 
 .logo span {
     color: #00d4ff;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-/* ===== HERO ===== */
+/* NAV */
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(10,15,28,0.85), rgba(10,15,28,0.9)),
+                url("background.png");
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #ff7b00;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #ff7b00;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #111a2e;
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255,123,0,0.3);
+}
+
+/* VIDEO HERO */
 .video-hero {
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
-/* VIDEO FULL */
 .bg-video {
     position: absolute;
     top: 50%;
     left: 50%;
     min-width: 120%;
     min-height: 120%;
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%);
     object-fit: cover;
-    filter: blur(2px) brightness(0.5);
+    filter: brightness(0.5);
 }
 
-/* CENTER CONTENT */
+/* HERO CENTER */
 .hero-center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
 }
 
-/* 🔥 TITLE BUTTON */
+/* HERO TITLE BUTTON */
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #ff7b00;
     text-decoration: none;
-    font-weight: bold;
-
     padding: 10px 25px;
     border-radius: 10px;
-
     background: rgba(255,123,0,0.1);
-    backdrop-filter: blur(10px);
-
     transition: 0.3s;
-    display: inline-block;
 }
 
-/* HOVER EFFECT */
 .hero-title:hover {
     transform: scale(1.1);
     box-shadow: 0 0 30px #ff7b00;
 }
 
-/* SUBTEXT */
-.hero-sub {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    opacity: 0.8;
-}
-
-/* ===== ORDER SECTION ===== */
+/* ORDER SECTION */
 .order-section {
     padding: 100px 20px;
-    text-align: center;
 }
 
 .order-container {
@@ -106,13 +162,11 @@ header {
     flex-wrap: wrap;
 }
 
-/* CARDS */
 .order-card {
     background: rgba(17,26,46,0.8);
     padding: 30px;
     width: 260px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
     transition: 0.3s;
 }
 
@@ -121,19 +175,12 @@ header {
     box-shadow: 0 0 25px rgba(255,123,0,0.4);
 }
 
-.custom-card {
-    border: 2px solid #00d4ff;
-}
-
-/* BUTTON */
 .order-card button {
     margin-top: 15px;
     padding: 10px 20px;
-    background: linear-gradient(45deg, #ff7b00, #ff4500);
+    background: #ff7b00;
     border: none;
     color: white;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* FOOTER */
