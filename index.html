@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <header>
     <div class="logo">
         <img src="logo.png" alt="TraceCore Labs">
@@ -24,14 +24,14 @@
     </nav>
 </header>
 
-<!-- Hero -->
+<!-- HERO -->
 <section class="hero">
     <h2>Precision PCB Design & Embedded Solutions</h2>
     <p>Building powerful electronics for real-world applications</p>
     <button onclick="scrollToContact()">Get Your PCB Designed</button>
 </section>
 
-<!-- Services -->
+<!-- SERVICES -->
 <section id="services">
     <h2>Our Services</h2>
     <div class="cards">
@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<!-- Portfolio -->
+<!-- PORTFOLIO -->
 <section id="portfolio">
     <h2>Our Work</h2>
     <div class="cards">
@@ -52,22 +52,23 @@
     </div>
 </section>
 
-<!-- PRODUCT SECTION -->
+<!-- PRODUCT -->
 <section id="product">
-    <h2>Our Product</h2>
+    <h2>Featured Product</h2>
 
     <div class="product-container">
 
-        <!-- Video -->
+        <!-- VIDEO -->
         <div class="product-video">
-            <video controls>
+            <video autoplay muted loop playsinline>
                 <source src="relay.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- Info -->
+        <!-- INFO -->
         <div class="product-info">
             <h3>4-Channel Relay Module</h3>
+
             <p>
                 Custom designed PCB using EasyEDA. Ideal for automation,
                 IoT systems, and industrial applications.
@@ -77,34 +78,38 @@
                 <li>✔ 4 Channel Relay Output</li>
                 <li>✔ High Voltage Isolation</li>
                 <li>✔ Arduino / ESP32 Compatible</li>
-                <li>✔ Custom PCB Design</li>
+                <li>✔ Industrial Grade Design</li>
             </ul>
 
-            <button onclick="scrollToContact()">Request Quote</button>
+            <button onclick="goToRelay()">View Product</button>
         </div>
 
     </div>
 </section>
 
-<!-- Contact -->
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: tracecorelabs@gmail.com</p>
-    <p>Email: rg97506@gmail.com</p>
-    <p>Phone: +91 7850973515</p>
+    <p>Phone: +91 XXXXXXXX</p>
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
     <p>© 2026 TraceCore Labs. All Rights Reserved.</p>
 </footer>
 
-<!-- WhatsApp -->
-<a href="https://wa.me/+91 7850973515" class="whatsapp">💬</a>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
 
+<!-- SCRIPT -->
 <script>
 function scrollToContact() {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+
+function goToRelay() {
+    window.location.href = "relay.html";
 }
 </script>
 
