@@ -1,208 +1,116 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ===== PRODUCT HERO ===== */
+.product-hero {
+    padding: 100px 20px;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0a0f1c;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-/* Navbar */
-header {
+/* WRAPPER */
+.product-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px 40px;
-    background: rgba(13, 19, 36, 0.6);
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* VIDEO BOX */
+.video-box {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 15px;
     backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 45px;
-    margin-right: 10px;
-}
-
-.logo span {
-    font-size: 22px;
-    font-weight: bold;
-    color: #00d4ff;
-}
-
-/* Nav */
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    position: relative;
-}
-
-nav a::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #ff7b00;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
+    box-shadow: 0 0 40px rgba(255,123,0,0.2);
     transition: 0.3s;
 }
 
-nav a:hover::after {
-    width: 100%;
+.video-box:hover {
+    transform: scale(1.03);
 }
 
-/* Hero */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background: linear-gradient(rgba(10,15,28,0.85), rgba(10,15,28,0.9)),
-                url("background.png");
-
-    background-size: cover;
-    background-position: center;
+/* VIDEO */
+.video-box video {
+    width: 420px;
+    border-radius: 10px;
 }
 
-.hero h2 {
-    font-size: 3rem;
+/* DETAILS */
+.product-details {
+    max-width: 420px;
+    text-align: left;
+}
+
+.product-details h1 {
+    font-size: 2.2rem;
     color: #ff7b00;
-    text-shadow: 0 0 20px rgba(255,123,0,0.7);
+    margin-bottom: 10px;
 }
 
-.hero p {
+.product-details p {
+    margin-bottom: 15px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.product-details ul {
     margin: 20px 0;
-    font-size: 1.2rem;
 }
 
-/* Button */
-.hero button {
+.product-details li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* BUTTON */
+.product-details button {
     padding: 12px 25px;
     background: linear-gradient(45deg, #ff7b00, #ff4500);
     border: none;
     color: white;
     border-radius: 6px;
     cursor: pointer;
-}
-
-.hero button:hover {
-    transform: scale(1.1);
-}
-
-/* Sections */
-section {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-/* Cards */
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    text-decoration: none;
-    color: white;
-    background: rgba(17, 26, 46, 0.8);
-    margin: 15px;
-    padding: 25px;
-    width: 220px;
-    border-radius: 12px;
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255,123,0,0.3);
+.product-details button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff7b00;
 }
 
-/* Product Section */
-.product-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
+/* HIGHLIGHT SECTION */
+.highlight {
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.product-video video {
-    width: 400px;
-    border-radius: 10px;
+.highlight h2 {
+    color: #00d4ff;
+    margin-bottom: 10px;
 }
 
-.product-info {
-    max-width: 400px;
-    text-align: left;
+/* CONTACT */
+#contact {
+    text-align: center;
+    padding: 60px 20px;
 }
 
-.product-info h3 {
-    color: #ff7b00;
-}
-
-.product-info ul {
-    margin: 15px 0;
-}
-
-.product-info button {
-    padding: 10px 20px;
-    background: #ff7b00;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     background: #0d1324;
 }
 
-/* WhatsApp */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
 
-    .product-container {
+    .product-wrapper {
         flex-direction: column;
     }
 
-    .product-video video {
+    .video-box video {
         width: 90%;
     }
 
-    .card {
-        width: 80%;
+    .product-details {
+        text-align: center;
     }
 }
