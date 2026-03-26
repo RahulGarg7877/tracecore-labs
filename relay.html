@@ -34,36 +34,37 @@
 <!-- FEATURES -->
 <section class="details">
     <h2>Product Features</h2>
-    <p>
-        ✔ 4 Channel Relay Output <br>
-        ✔ High Voltage Switching <br>
-        ✔ ESP32 / Arduino Compatible <br>
-        ✔ Industrial Grade PCB Design
-    </p>
+
+    <div class="feature-box">
+        <p>✔ 4 Channel Relay Output</p>
+        <p>✔ High Voltage Switching</p>
+        <p>✔ ESP32 / Arduino Compatible</p>
+        <p>✔ Industrial Grade PCB Design</p>
+    </div>
 </section>
 
-<!-- 🔥 ORDER SECTION -->
+<!-- 🔥 ORDER SECTION (NEW UI) -->
 <section class="order-section">
 
     <h2>Order Your PCB</h2>
-    <p>Select how you want to proceed</p>
+    <p class="order-sub">Choose how you want to proceed</p>
 
     <div class="order-container">
 
-        <!-- STANDARD PRODUCT -->
+        <!-- STANDARD -->
         <div class="order-card">
             <h3>Standard Product</h3>
-            <p>Get the ready-made 4-channel relay module.</p>
+            <p>Get ready-made relay module</p>
 
             <button onclick="orderStandard()">Order Now</button>
         </div>
 
-        <!-- CUSTOM PRODUCT -->
-        <div class="order-card highlight-card">
+        <!-- CUSTOM -->
+        <div class="order-card custom-card">
             <h3>Custom PCB Design</h3>
-            <p>Need modification or custom design? We build it as per your requirement.</p>
+            <p>We design according to your requirements</p>
 
-            <button onclick="orderCustom()">Request Custom Design</button>
+            <button onclick="orderCustom()">Request Custom</button>
         </div>
 
     </div>
@@ -84,14 +85,12 @@ function scrollToDetails() {
     });
 }
 
-/* WhatsApp Standard Order */
 function orderStandard() {
-    window.open("https://wa.me/917850973515?text=Hello%20I%20want%20to%20order%204-channel%20relay%20module", "_blank");
+    window.open("https://wa.me/917850973515?text=I%20want%204-channel%20relay%20module", "_blank");
 }
 
-/* WhatsApp Custom Order */
 function orderCustom() {
-    window.open("https://wa.me/917850973515?text=Hello%20I%20need%20custom%20PCB%20design%20with%20modifications", "_blank");
+    window.open("https://wa.me/917850973515?text=I%20need%20custom%20PCB%20design", "_blank");
 }
 </script>
 
