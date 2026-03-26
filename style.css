@@ -1,150 +1,50 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* BODY */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0a0f1c;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-/* NAVBAR */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: rgba(13, 19, 36, 0.6);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-}
-
-/* LOGO */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 45px;
-    margin-right: 10px;
-}
-
-.logo span {
-    font-size: 22px;
-    font-weight: bold;
-    color: #00d4ff;
-}
-
-/* NAV LINKS */
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-}
-
-/* HERO */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background: linear-gradient(rgba(10,15,28,0.85), rgba(10,15,28,0.9)),
-                url("background.png");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    color: #ff7b00;
-}
-
-.hero p {
-    margin: 20px 0;
-}
-
-.hero button {
-    padding: 12px 25px;
-    background: #ff7b00;
-    border: none;
-    color: white;
-    border-radius: 5px;
-}
-
-/* SECTIONS */
-section {
+/* ORDER SECTION */
+.order-section {
     padding: 80px 20px;
     text-align: center;
 }
 
-/* CARDS */
-.cards {
+.order-container {
     display: flex;
     justify-content: center;
+    gap: 40px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.card {
-    text-decoration: none;
-    color: white;
+.order-card {
     background: rgba(17, 26, 46, 0.8);
-    margin: 15px;
-    padding: 25px;
-    width: 220px;
+    padding: 30px;
+    width: 280px;
     border-radius: 12px;
     transition: 0.3s;
 }
 
-.card:hover {
+.order-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255,123,0,0.3);
 }
 
-/* CONTACT */
-#contact {
-    padding: 60px 20px;
+.order-card h3 {
+    color: #ff7b00;
+    margin-bottom: 10px;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #0d1324;
+.order-card p {
+    margin-bottom: 20px;
 }
 
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
+/* BUTTON */
+.order-card button {
+    padding: 10px 20px;
+    background: #ff7b00;
+    border: none;
     color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
+/* HIGHLIGHT CUSTOM CARD */
+.highlight-card {
+    border: 2px solid #00d4ff;
 }
