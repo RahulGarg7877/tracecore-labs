@@ -1,116 +1,305 @@
-/* ===== PRODUCT HERO ===== */
-.product-hero {
-    padding: 100px 20px;
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* WRAPPER */
-.product-wrapper {
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0f1c;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    flex-wrap: wrap;
+    padding: 15px 40px;
+    background: rgba(13, 19, 36, 0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* VIDEO BOX */
-.video-box {
-    background: rgba(255,255,255,0.05);
-    padding: 15px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 40px rgba(255,123,0,0.2);
+/* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+/* ===== NAV LINKS ===== */
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ff7b00;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
     transition: 0.3s;
 }
 
-.video-box:hover {
-    transform: scale(1.03);
+nav a:hover::after {
+    width: 100%;
 }
 
-/* VIDEO */
-.video-box video {
-    width: 420px;
-    border-radius: 10px;
+/* ===== HERO (INDEX PAGE) ===== */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(10,15,28,0.85), rgba(10,15,28,0.9)),
+                url("background.png");
+
+    background-size: cover;
+    background-position: center;
 }
 
-/* DETAILS */
-.product-details {
-    max-width: 420px;
-    text-align: left;
-}
-
-.product-details h1 {
-    font-size: 2.2rem;
+.hero h2 {
+    font-size: 3rem;
     color: #ff7b00;
-    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(255,123,0,0.7);
 }
 
-.product-details p {
-    margin-bottom: 15px;
-    opacity: 0.9;
-    line-height: 1.5;
-}
-
-.product-details ul {
+.hero p {
     margin: 20px 0;
+    font-size: 1.2rem;
 }
 
-.product-details li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-/* BUTTON */
-.product-details button {
+.hero button {
     padding: 12px 25px;
     background: linear-gradient(45deg, #ff7b00, #ff4500);
     border: none;
     color: white;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-decoration: none;
+    color: white;
+    background: rgba(17, 26, 46, 0.8);
+    margin: 15px;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
     transition: 0.3s;
 }
 
-.product-details button:hover {
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255,123,0,0.3);
+}
+
+/* ===== PRODUCT SECTION (INDEX) ===== */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.product-video video {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.product-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.product-info h3 {
+    color: #ff7b00;
+}
+
+.product-info ul {
+    margin: 15px 0;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    background: #ff7b00;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ===== VIDEO HERO (RELAY PAGE) ===== */
+.video-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* VIDEO FULL SCREEN */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* DARK OVERLAY */
+.video-hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 15, 28, 0.65);
+    top: 0;
+    left: 0;
+}
+
+/* TEXT OVER VIDEO */
+.overlay-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.overlay-content h1 {
+    font-size: 3rem;
+    color: #ff7b00;
+    text-shadow: 0 0 20px rgba(255,123,0,0.8);
+}
+
+.overlay-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.overlay-content button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff7b00, #ff4500);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.overlay-content button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px #ff7b00;
 }
 
-/* HIGHLIGHT SECTION */
-.highlight {
-    text-align: center;
+/* ===== DETAILS SECTION ===== */
+.details {
     padding: 80px 20px;
 }
 
-.highlight h2 {
+.details h2 {
     color: #00d4ff;
     margin-bottom: 10px;
 }
 
-/* CONTACT */
+/* ===== CONTACT ===== */
 #contact {
     text-align: center;
     padding: 60px 20px;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 20px;
     background: #0d1324;
 }
 
-/* MOBILE */
+/* ===== WHATSAPP ===== */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
 
-    .product-wrapper {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .product-container {
         flex-direction: column;
     }
 
-    .video-box video {
+    .product-video video {
         width: 90%;
     }
 
-    .product-details {
-        text-align: center;
+    .overlay-content h1 {
+        font-size: 2rem;
     }
 }
