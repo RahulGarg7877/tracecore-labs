@@ -9,10 +9,15 @@
 ===================================================== */
 
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
+
 
 
 /* =====================================================
@@ -21,7 +26,10 @@
 
 body {
 
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
 
     background: #070b14;
 
@@ -32,13 +40,12 @@ body {
 }
 
 
-/* Prevent scrolling while image modal is open */
-
 body.modal-open {
 
     overflow: hidden;
 
 }
+
 
 
 /* =====================================================
@@ -53,19 +60,27 @@ header {
 
     z-index: 100;
 
+    width: 100%;
+
     display: flex;
 
     justify-content: space-between;
 
     align-items: center;
 
-    padding: 15px 45px;
+    padding: 14px 45px;
 
-    background: rgba(13, 19, 36, 0.97);
+    background:
+        rgba(13, 19, 36, 0.97);
 
-    border-bottom: 1px solid rgba(0, 212, 255, 0.12);
+    border-bottom:
+        1px solid
+        rgba(0, 212, 255, 0.12);
+
+    backdrop-filter: blur(10px);
 
 }
+
 
 
 /* =====================================================
@@ -107,6 +122,7 @@ header {
 }
 
 
+
 /* =====================================================
    NAVIGATION
 ===================================================== */
@@ -122,6 +138,8 @@ nav {
 
 nav a {
 
+    position: relative;
+
     margin-left: 28px;
 
     color: white;
@@ -135,9 +153,37 @@ nav a {
 }
 
 
+nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -7px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #ff7b00;
+
+    transition: 0.3s;
+
+}
+
+
 nav a:hover {
 
     color: #ff7b00;
+
+}
+
+
+nav a:hover::after {
+
+    width: 100%;
 
 }
 
@@ -149,13 +195,21 @@ nav a.active {
 }
 
 
+nav a.active::after {
+
+    width: 100%;
+
+}
+
+
+
 /* =====================================================
-   HERO
+   HERO SECTION
 ===================================================== */
 
 .products-hero {
 
-    min-height: 430px;
+    min-height: 480px;
 
     display: flex;
 
@@ -170,7 +224,7 @@ nav a.active {
     background:
 
         linear-gradient(
-            rgba(7, 11, 20, 0.80),
+            rgba(7, 11, 20, 0.78),
             rgba(7, 11, 20, 0.94)
         ),
 
@@ -179,6 +233,8 @@ nav a.active {
     background-size: cover;
 
     background-position: center;
+
+    background-attachment: fixed;
 
 }
 
@@ -190,17 +246,17 @@ nav a.active {
 }
 
 
-.small-title {
+.hero-small-title {
 
     display: inline-block;
 
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 
     color: #00d4ff;
 
     font-size: 13px;
 
-    font-weight: bold;
+    font-weight: 700;
 
     letter-spacing: 4px;
 
@@ -209,11 +265,16 @@ nav a.active {
 
 .products-hero h1 {
 
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: 20px;
 
     color: #ff7b00;
 
-    margin-bottom: 20px;
+    font-size:
+        clamp(
+            2.5rem,
+            6vw,
+            4.5rem
+        );
 
     line-height: 1.1;
 
@@ -222,7 +283,7 @@ nav a.active {
 
 .products-hero p {
 
-    max-width: 700px;
+    max-width: 720px;
 
     margin: auto;
 
@@ -231,6 +292,79 @@ nav a.active {
     font-size: 18px;
 
 }
+
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.primary-button,
+.secondary-button {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.primary-button {
+
+    background: #ff7b00;
+
+    color: white;
+
+}
+
+
+.primary-button:hover {
+
+    background: #ff8f26;
+
+    transform: translateY(-3px);
+
+}
+
+
+.secondary-button {
+
+    border:
+        1px solid
+        #00d4ff;
+
+    color: #00d4ff;
+
+    background:
+        rgba(0, 212, 255, 0.04);
+
+}
+
+
+.secondary-button:hover {
+
+    background: #00d4ff;
+
+    color: #07101b;
+
+}
+
 
 
 /* =====================================================
@@ -248,7 +382,8 @@ nav a.active {
 
     max-width: 800px;
 
-    margin: 0 auto 60px;
+    margin:
+        0 auto 60px;
 
     text-align: center;
 
@@ -261,7 +396,7 @@ nav a.active {
 
     font-size: 13px;
 
-    font-weight: bold;
+    font-weight: 700;
 
     letter-spacing: 3px;
 
@@ -270,9 +405,10 @@ nav a.active {
 
 .section-heading h2 {
 
-    margin: 10px 0;
+    margin:
+        10px 0 12px;
 
-    font-size: 40px;
+    font-size: 42px;
 
 }
 
@@ -281,11 +417,14 @@ nav a.active {
 
     color: #9fa8b7;
 
+    font-size: 16px;
+
 }
 
 
+
 /* =====================================================
-   PRODUCTS GRID
+   PRODUCT GRID
 ===================================================== */
 
 .products-grid {
@@ -307,6 +446,7 @@ nav a.active {
 }
 
 
+
 /* =====================================================
    PRODUCT CARD
 ===================================================== */
@@ -316,14 +456,14 @@ nav a.active {
     overflow: hidden;
 
     background:
-
         linear-gradient(
             145deg,
             #111a2e,
             #0d1324
         );
 
-    border: 1px solid
+    border:
+        1px solid
         rgba(0, 212, 255, 0.12);
 
     border-radius: 16px;
@@ -340,16 +480,18 @@ nav a.active {
 
 .product-card:hover {
 
-    transform: translateY(-10px);
+    transform:
+        translateY(-10px);
 
     border-color:
         rgba(255, 123, 0, 0.7);
 
     box-shadow:
-        0 20px 45px
-        rgba(255, 123, 0, 0.15);
+        0 20px 50px
+        rgba(255, 123, 0, 0.16);
 
 }
+
 
 
 /* =====================================================
@@ -358,7 +500,7 @@ nav a.active {
 
 .product-image {
 
-    height: 290px;
+    height: 300px;
 
     display: flex;
 
@@ -366,7 +508,7 @@ nav a.active {
 
     align-items: center;
 
-    padding: 20px;
+    padding: 22px;
 
     background: #02050a;
 
@@ -383,7 +525,8 @@ nav a.active {
 
     object-fit: contain;
 
-    transition: transform 0.4s ease;
+    transition:
+        transform 0.4s ease;
 
 }
 
@@ -391,9 +534,11 @@ nav a.active {
 .product-card:hover
 .product-image img {
 
-    transform: scale(1.05);
+    transform:
+        scale(1.05);
 
 }
+
 
 
 /* =====================================================
@@ -424,7 +569,8 @@ nav a.active {
 
 .product-content h3 {
 
-    margin: 8px 0 12px;
+    margin:
+        8px 0 12px;
 
     font-size: 24px;
 
@@ -442,6 +588,7 @@ nav a.active {
 }
 
 
+
 /* =====================================================
    PRODUCT BUTTON
 ===================================================== */
@@ -450,7 +597,8 @@ nav a.active {
 
     margin-top: 18px;
 
-    padding: 11px 20px;
+    padding:
+        11px 20px;
 
     border: none;
 
@@ -475,9 +623,11 @@ nav a.active {
 
     background: #ff8f26;
 
-    transform: translateX(4px);
+    transform:
+        translateX(4px);
 
 }
+
 
 
 /* =====================================================
@@ -503,7 +653,7 @@ nav a.active {
 
 .custom-product-icon {
 
-    height: 290px;
+    height: 300px;
 
     display: flex;
 
@@ -511,14 +661,19 @@ nav a.active {
 
     align-items: center;
 
+    background:
+        rgba(0, 212, 255, 0.03);
+
+}
+
+
+.custom-product-icon span {
+
     color: #00d4ff;
 
     font-size: 120px;
 
     font-weight: 200;
-
-    background:
-        rgba(0, 212, 255, 0.03);
 
 }
 
@@ -529,7 +684,8 @@ nav a.active {
 
     margin-top: 18px;
 
-    padding: 11px 20px;
+    padding:
+        11px 20px;
 
     border-radius: 6px;
 
@@ -552,9 +708,11 @@ nav a.active {
 
     background: #ff8f26;
 
-    transform: translateX(4px);
+    transform:
+        translateX(4px);
 
 }
+
 
 
 /* =====================================================
@@ -604,9 +762,15 @@ nav a.active {
 
 .custom-text h2 {
 
-    margin: 12px 0 20px;
+    margin:
+        12px 0 20px;
 
-    font-size: clamp(2rem, 4vw, 3.3rem);
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.3rem
+        );
 
     line-height: 1.15;
 
@@ -615,9 +779,16 @@ nav a.active {
 
 .custom-text p {
 
+    max-width: 600px;
+
     color: #aeb7c7;
 
-    max-width: 600px;
+}
+
+
+.custom-note {
+
+    margin-top: 15px;
 
 }
 
@@ -628,7 +799,8 @@ nav a.active {
 
     margin-top: 25px;
 
-    padding: 13px 25px;
+    padding:
+        13px 25px;
 
     border-radius: 6px;
 
@@ -649,9 +821,11 @@ nav a.active {
 
     background: #ff8f26;
 
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 
 }
+
 
 
 /* =====================================================
@@ -664,8 +838,6 @@ nav a.active {
 
     flex-direction: column;
 
-    gap: 15px;
-
 }
 
 
@@ -677,7 +849,8 @@ nav a.active {
 
     gap: 20px;
 
-    padding: 17px 22px;
+    padding:
+        17px 22px;
 
     background: #111a2e;
 
@@ -698,24 +871,34 @@ nav a.active {
 
     align-items: center;
 
-    min-width: 45px;
+    min-width: 48px;
 
-    height: 45px;
+    height: 48px;
 
     border-radius: 50%;
 
-    background: rgba(255, 123, 0, 0.12);
+    background:
+        rgba(255, 123, 0, 0.12);
 
     color: #ff7b00;
 
 }
 
 
-.process-step span {
+.process-step h4 {
 
-    color: #e7eaf0;
+    margin-bottom: 3px;
 
-    font-weight: 600;
+    font-size: 17px;
+
+}
+
+
+.process-step p {
+
+    color: #929cad;
+
+    font-size: 13px;
 
 }
 
@@ -724,9 +907,9 @@ nav a.active {
 
     width: 2px;
 
-    height: 10px;
+    height: 12px;
 
-    margin-left: 43px;
+    margin-left: 45px;
 
     background: #00d4ff;
 
@@ -735,8 +918,9 @@ nav a.active {
 }
 
 
+
 /* =====================================================
-   IMAGE MODAL
+   MODAL
 ===================================================== */
 
 .modal {
@@ -756,7 +940,7 @@ nav a.active {
     padding: 30px;
 
     background:
-        rgba(0, 0, 0, 0.92);
+        rgba(0, 0, 0, 0.93);
 
 }
 
@@ -770,9 +954,11 @@ nav a.active {
 
 .modal-content {
 
+    width: 100%;
+
     max-width: 1100px;
 
-    max-height: 90vh;
+    max-height: 92vh;
 
     text-align: center;
 
@@ -781,11 +967,22 @@ nav a.active {
 
 .modal-content h2 {
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     color: #ff7b00;
 
     font-size: 28px;
+
+}
+
+
+.modal-image-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 
 }
 
@@ -807,6 +1004,18 @@ nav a.active {
 }
 
 
+.modal-instruction {
+
+    margin-top: 12px;
+
+    color: #737d8e;
+
+    font-size: 12px;
+
+}
+
+
+
 /* =====================================================
    CLOSE BUTTON
 ===================================================== */
@@ -815,9 +1024,9 @@ nav a.active {
 
     position: fixed;
 
-    top: 20px;
+    top: 18px;
 
-    right: 30px;
+    right: 28px;
 
     width: 50px;
 
@@ -835,6 +1044,8 @@ nav a.active {
 
     z-index: 1001;
 
+    transition: 0.3s;
+
 }
 
 
@@ -842,7 +1053,11 @@ nav a.active {
 
     color: #ff7b00;
 
+    transform:
+        rotate(90deg);
+
 }
+
 
 
 /* =====================================================
@@ -851,7 +1066,8 @@ nav a.active {
 
 footer {
 
-    padding: 35px 20px;
+    padding:
+        35px 20px;
 
     text-align: center;
 
@@ -880,26 +1096,62 @@ footer p {
 }
 
 
-footer .copyright {
+.footer-links {
 
-    margin-top: 12px;
+    display: flex;
 
-    font-size: 13px;
+    justify-content: center;
 
-    color: #687285;
+    gap: 25px;
+
+    margin: 15px 0;
 
 }
 
 
+.footer-links a {
+
+    color: #c8ced8;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+.footer-links a:hover {
+
+    color: #ff7b00;
+
+}
+
+
+footer .copyright {
+
+    margin-top: 10px;
+
+    color: #687285;
+
+    font-size: 13px;
+
+}
+
+
+
 /* =====================================================
-   MOBILE
+   TABLET
 ===================================================== */
 
 @media (max-width: 850px) {
 
+
     header {
 
-        padding: 15px 20px;
+        padding:
+            15px 20px;
 
         flex-direction: column;
 
@@ -921,21 +1173,25 @@ footer .copyright {
 
     nav a {
 
-        margin: 0 7px;
+        margin:
+            0 7px;
 
     }
 
 
     .products-hero {
 
-        min-height: 360px;
+        min-height: 400px;
+
+        background-attachment: scroll;
 
     }
 
 
     .products-section {
 
-        padding: 70px 20px;
+        padding:
+            70px 20px;
 
     }
 
@@ -948,14 +1204,30 @@ footer .copyright {
 
     }
 
+
 }
 
 
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
 @media (max-width: 500px) {
+
 
     .logo span {
 
         font-size: 19px;
+
+    }
+
+
+    .logo img {
+
+        width: 36px;
+
+        height: 36px;
 
     }
 
@@ -967,9 +1239,20 @@ footer .copyright {
     }
 
 
+    .products-hero {
+
+        min-height: 360px;
+
+        padding:
+            60px 20px;
+
+    }
+
+
     .products-hero h1 {
 
-        font-size: 2.4rem;
+        font-size:
+            2.4rem;
 
     }
 
@@ -977,6 +1260,23 @@ footer .copyright {
     .products-hero p {
 
         font-size: 15px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .primary-button,
+    .secondary-button {
+
+        width: 220px;
 
     }
 
@@ -1005,8 +1305,43 @@ footer .copyright {
 
     .custom-section {
 
-        padding: 70px 20px;
+        padding:
+            70px 20px;
 
     }
+
+
+    .custom-text h2 {
+
+        font-size: 2.3rem;
+
+    }
+
+
+    .modal {
+
+        padding:
+            15px;
+
+    }
+
+
+    .modal-content img {
+
+        max-width: 95vw;
+
+        max-height: 75vh;
+
+    }
+
+
+    .close-button {
+
+        top: 8px;
+
+        right: 10px;
+
+    }
+
 
 }
