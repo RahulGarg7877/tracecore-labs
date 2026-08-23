@@ -2,847 +2,204 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="TraceCore Labs electronics products including flight controllers, ESCs, relay modules and custom PCB solutions.">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TraceCore Labs electronics products including flight controllers, ESCs, relay modules and custom PCB solutions.">
     <title>Products | TraceCore Labs</title>
-
-    <link rel="stylesheet"
-          href="products-style.css">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products-style.css">
 </head>
 
-
 <body>
-
-
-<!-- =====================================================
-     NAVIGATION BAR
-===================================================== -->
-
-<header>
-
-    <div class="logo">
-
-        <a href="index.html">
-
-            <img src="logo.png"
-                 alt="TraceCore Labs Logo">
-
-            <span>
-                TraceCore Labs
-            </span>
-
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="TraceCore Labs home">
+            <img src="logo-original-black.png" alt="">
+            <span>TraceCore Labs</span>
         </a>
 
-    </div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html#capabilities">Capabilities</a>
+            <a href="products.html" aria-current="page">Products</a>
+            <a href="index.html#process">Process</a>
+            <a href="index.html#quote-form">Quote</a>
+        </nav>
 
+        <a class="nav-action" href="index.html#quote-form">Start Project</a>
+    </header>
 
-    <nav>
-
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="index.html#services">
-            Services
-        </a>
-
-        <a href="products.html"
-           class="active">
-            Products
-        </a>
-
-        <a href="index.html#portfolio">
-            Portfolio
-        </a>
-
-        <a href="index.html#contact">
-            Contact
-        </a>
-
-    </nav>
-
-</header>
-
-
-
-<!-- =====================================================
-     HERO SECTION
-===================================================== -->
-
-<section class="products-hero">
-
-    <div class="hero-content">
-
-        <span class="hero-small-title">
-            TRACECORE LABS
-        </span>
-
-
-        <h1>
-            Electronics Products
-        </h1>
-
-
-        <p>
-            Precision-engineered PCB solutions for drones,
-            robotics, embedded systems and real-world applications.
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a href="#products"
-               class="primary-button">
-
-                Explore Products
-
-            </a>
-
-
-            <a href="#custom-pcb"
-               class="secondary-button">
-
-                Custom PCB
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PRODUCTS SECTION
-===================================================== -->
-
-<section class="products-section"
-         id="products">
-
-
-    <div class="section-heading">
-
-        <span>
-            OUR PRODUCTS
-        </span>
-
-
-        <h2>
-            Engineered Electronics
-        </h2>
-
-
-        <p>
-            Explore our range of PCB and embedded electronics
-            designed for practical applications.
-        </p>
-
-    </div>
-
-
-
-    <div class="products-grid">
-
-
-
-        <!-- =================================================
-             PRODUCT 1
-        ================================================== -->
-
-        <div class="product-card"
-             onclick="openProduct(
-             'products/esc-bidirectional.png',
-             'Bidirectional ESC'
-             )">
-
-
-            <div class="product-image">
-
-                <img
-                    src="products/esc-bidirectional.png"
-                    alt="Bidirectional ESC PCB">
-
+    <main>
+        <section class="catalog-hero">
+            <div>
+                <p class="eyebrow">TRACECORE PRODUCT SYSTEMS</p>
+                <h1>Precision boards for machines that move, sense and switch.</h1>
+                <p class="hero-lede">
+                    Explore flight control, ESC and relay electronics designed for real embedded applications.
+                </p>
+                <div class="action-row">
+                    <a class="button primary" href="#catalog">View Catalog</a>
+                    <a class="button secondary" href="index.html#quote-form">Request Quote</a>
+                </div>
             </div>
 
+            <div class="catalog-orbit" aria-label="Featured TraceCore PCBs">
+                <img src="products/rocket-flight-controller.png" alt="Rocket flight controller PCB">
+                <img src="products/esc-unidirectional.png" alt="Unidirectional ESC PCB">
+                <img src="products/four-channel-relay.png" alt="4-channel relay PCB">
+            </div>
+        </section>
 
-            <div class="product-content">
+        <section class="section catalog-section" id="catalog">
+            <div class="section-intro centered">
+                <p class="eyebrow">CATALOG</p>
+                <h2>Choose a board, then inspect the layout.</h2>
+                <p>Each product preview opens as a focused sheet with the PCB image.</p>
+            </div>
 
-                <span class="product-category">
-                    MOTOR CONTROL
-                </span>
-
-
-                <h3>
-                    Bidirectional ESC
-                </h3>
-
-
-                <p>
-                    Electronic speed controller designed
-                    for reversible motor applications.
-                </p>
-
-
-                <button type="button">
-                    View PCB →
+            <div class="catalog-grid">
+                <button class="catalog-card" type="button" data-image="products/esc-bidirectional.png" data-title="Bidirectional ESC">
+                    <img src="products/esc-bidirectional.png" alt="">
+                    <span>MOTOR CONTROL</span>
+                    <h3>Bidirectional ESC</h3>
+                    <p>Reversible motor-control electronics for robotics and motion systems.</p>
+                    <strong>Inspect PCB</strong>
                 </button>
 
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 2
-        ================================================== -->
-
-        <div class="product-card"
-             onclick="openProduct(
-             'products/esc-unidirectional.png',
-             'Unidirectional ESC'
-             )">
-
-
-            <div class="product-image">
-
-                <img
-                    src="products/esc-unidirectional.png"
-                    alt="Unidirectional ESC PCB">
-
-            </div>
-
-
-            <div class="product-content">
-
-                <span class="product-category">
-                    MOTOR CONTROL
-                </span>
-
-
-                <h3>
-                    Unidirectional ESC
-                </h3>
-
-
-                <p>
-                    Electronic speed controller designed
-                    for single-direction motor applications.
-                </p>
-
-
-                <button type="button">
-                    View PCB →
+                <button class="catalog-card" type="button" data-image="products/esc-unidirectional.png" data-title="Unidirectional ESC">
+                    <img src="products/esc-unidirectional.png" alt="">
+                    <span>MOTOR CONTROL</span>
+                    <h3>Unidirectional ESC</h3>
+                    <p>Single-direction electronic speed controller for compact motor applications.</p>
+                    <strong>Inspect PCB</strong>
                 </button>
 
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 3
-        ================================================== -->
-
-        <div class="product-card"
-             onclick="openProduct(
-             'products/rocket-flight-controller.png',
-             'Rocket Flight Controller'
-             )">
-
-
-            <div class="product-image">
-
-                <img
-                    src="products/rocket-flight-controller.png"
-                    alt="Rocket Flight Controller PCB">
-
-            </div>
-
-
-            <div class="product-content">
-
-                <span class="product-category">
-                    AEROSPACE ELECTRONICS
-                </span>
-
-
-                <h3>
-                    Rocket Flight Controller
-                </h3>
-
-
-                <p>
-                    Dedicated flight-control electronics
-                    for rocket and experimental aerospace applications.
-                </p>
-
-
-                <button type="button">
-                    View PCB →
+                <button class="catalog-card featured" type="button" data-image="products/rocket-flight-controller.png" data-title="Rocket Flight Controller">
+                    <img src="products/rocket-flight-controller.png" alt="">
+                    <span>AEROSPACE ELECTRONICS</span>
+                    <h3>Rocket Flight Controller</h3>
+                    <p>Dedicated flight-control electronics for experimental aerospace platforms.</p>
+                    <strong>Inspect PCB</strong>
                 </button>
 
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 4
-        ================================================== -->
-
-        <div class="product-card"
-             onclick="openProduct(
-             'products/flight-controller.png',
-             'Flight Controller'
-             )">
-
-
-            <div class="product-image">
-
-                <img
-                    src="products/flight-controller.png"
-                    alt="Flight Controller PCB">
-
-            </div>
-
-
-            <div class="product-content">
-
-                <span class="product-category">
-                    UAV ELECTRONICS
-                </span>
-
-
-                <h3>
-                    Flight Controller
-                </h3>
-
-
-                <p>
-                    Compact flight-control PCB for UAV,
-                    drone and embedded navigation applications.
-                </p>
-
-
-                <button type="button">
-                    View PCB →
+                <button class="catalog-card" type="button" data-image="products/flight-controller.png" data-title="Flight Controller">
+                    <img src="products/flight-controller.png" alt="">
+                    <span>UAV ELECTRONICS</span>
+                    <h3>Flight Controller</h3>
+                    <p>Compact flight-control board for UAV, drone and embedded navigation use.</p>
+                    <strong>Inspect PCB</strong>
                 </button>
 
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 5
-        ================================================== -->
-
-        <div class="product-card"
-             onclick="openProduct(
-             'products/four-channel-relay.png',
-             '4-Channel Relay Module'
-             )">
-
-
-            <div class="product-image">
-
-                <img
-                    src="products/four-channel-relay.png"
-                    alt="4-Channel Relay Module PCB">
-
-            </div>
-
-
-            <div class="product-content">
-
-                <span class="product-category">
-                    CONTROL ELECTRONICS
-                </span>
-
-
-                <h3>
-                    4-Channel Relay Module
-                </h3>
-
-
-                <p>
-                    Four-channel relay control PCB for
-                    embedded, robotics and automation applications.
-                </p>
-
-
-                <button type="button">
-                    View PCB →
+                <button class="catalog-card" type="button" data-image="products/four-channel-relay.png" data-title="4-Channel Relay Module">
+                    <img src="products/four-channel-relay.png" alt="">
+                    <span>CONTROL ELECTRONICS</span>
+                    <h3>4-Channel Relay</h3>
+                    <p>Relay control board for automation, embedded systems and switching workflows.</p>
+                    <strong>Inspect PCB</strong>
                 </button>
 
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             PRODUCT 6 - CUSTOM PCB
-        ================================================== -->
-
-        <div class="product-card custom-product">
-
-
-            <div class="custom-product-icon">
-
-                <span>
-                    +
-                </span>
-
-            </div>
-
-
-            <div class="product-content">
-
-                <span class="product-category">
-                    CUSTOM DEVELOPMENT
-                </span>
-
-
-                <h3>
-                    Custom PCB
-                </h3>
-
-
-                <p>
-                    Have a unique requirement?
-                    We design custom PCBs according to
-                    your application and specifications.
-                </p>
-
-
-                <a href="#custom-pcb"
-                   class="custom-button">
-
-                    Request Custom PCB →
-
+                <a class="catalog-card custom-card" href="#custom-pcb">
+                    <div class="custom-mark">+</div>
+                    <span>CUSTOM DEVELOPMENT</span>
+                    <h3>Custom PCB</h3>
+                    <p>Share dimensions, interfaces, components and electrical constraints.</p>
+                    <strong>Start custom brief</strong>
                 </a>
+            </div>
+        </section>
 
+        <section class="custom-lab" id="custom-pcb">
+            <div>
+                <p class="eyebrow">CUSTOM PCB DEVELOPMENT</p>
+                <h2>Your requirement, engineered into a manufacturable board.</h2>
+                <p>
+                    TraceCore Labs can design electronics around your application, enclosure, component set,
+                    interfaces and validation needs.
+                </p>
+                <a class="button primary" href="index.html#quote-form">Open Quote Form</a>
             </div>
 
+            <ol class="lab-steps">
+                <li>
+                    <span>01</span>
+                    <strong>Requirement</strong>
+                    <p>Map constraints, interfaces and performance needs.</p>
+                </li>
+                <li>
+                    <span>02</span>
+                    <strong>Schematic</strong>
+                    <p>Define the electrical architecture and component plan.</p>
+                </li>
+                <li>
+                    <span>03</span>
+                    <strong>PCB Layout</strong>
+                    <p>Route the board for manufacturing and assembly.</p>
+                </li>
+                <li>
+                    <span>04</span>
+                    <strong>Prototype</strong>
+                    <p>Build, test and refine the first hardware version.</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <div class="preview-sheet" id="previewSheet" role="dialog" aria-modal="true" aria-labelledby="previewTitle" aria-hidden="true" hidden>
+        <button class="sheet-close" type="button" aria-label="Close preview" tabindex="-1">x</button>
+        <div class="sheet-body">
+            <h2 id="previewTitle">Product Preview</h2>
+            <div class="sheet-image">
+                <img id="previewImage" src="products/flight-controller.png" alt="Product PCB preview">
+            </div>
         </div>
-
-
     </div>
 
-</section>
-
-
-
-<!-- =====================================================
-     CUSTOM PCB SECTION
-===================================================== -->
-
-<section class="custom-section"
-         id="custom-pcb">
-
-
-    <div class="custom-container">
-
-
-        <!-- LEFT -->
-
-        <div class="custom-text">
-
-            <span class="product-category">
-                CUSTOM ELECTRONICS DEVELOPMENT
-            </span>
-
-
-            <h2>
-                Your Requirement.
-                <br>
-                Our Engineering.
-            </h2>
-
-
-            <p>
-                Don't see the product you need?
-                TraceCore Labs can design and develop
-                a custom PCB according to your exact
-                electrical, mechanical and application requirements.
-            </p>
-
-
-            <p class="custom-note">
-                Tell us what you need and our engineering
-                process can take your idea from concept
-                to prototype.
-            </p>
-
-
-            <a href="index.html#contact"
-               class="quote-button">
-
-                Start Your Project →
-
-            </a>
-
-        </div>
-
-
-
-        <!-- RIGHT -->
-
-        <div class="custom-process">
-
-
-            <div class="process-step">
-
-                <strong>
-                    01
-                </strong>
-
-                <div>
-
-                    <h4>
-                        Requirement
-                    </h4>
-
-                    <p>
-                        Understand your application
-                        and technical requirements.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="process-line"></div>
-
-
-            <div class="process-step">
-
-                <strong>
-                    02
-                </strong>
-
-                <div>
-
-                    <h4>
-                        Schematic
-                    </h4>
-
-                    <p>
-                        Develop the electrical architecture
-                        and schematic.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="process-line"></div>
-
-
-            <div class="process-step">
-
-                <strong>
-                    03
-                </strong>
-
-                <div>
-
-                    <h4>
-                        PCB Design
-                    </h4>
-
-                    <p>
-                        Create the PCB layout according
-                        to electrical and mechanical needs.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="process-line"></div>
-
-
-            <div class="process-step">
-
-                <strong>
-                    04
-                </strong>
-
-                <div>
-
-                    <h4>
-                        Prototype
-                    </h4>
-
-                    <p>
-                        Manufacture and assemble
-                        the first prototype.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="process-line"></div>
-
-
-            <div class="process-step">
-
-                <strong>
-                    05
-                </strong>
-
-                <div>
-
-                    <h4>
-                        Testing
-                    </h4>
-
-                    <p>
-                        Test and validate the hardware
-                        before production.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PRODUCT IMAGE MODAL
-===================================================== -->
-
-<div id="productModal"
-     class="modal"
-     onclick="closeProduct(event)">
-
-
-    <button
-        class="close-button"
-        onclick="closeProduct()">
-
-        ×
-
-    </button>
-
-
-    <div class="modal-content"
-         onclick="event.stopPropagation()">
-
-
-        <h2 id="modalTitle">
-            Product
-        </h2>
-
-
-        <div class="modal-image-container">
-
-            <img
-                id="modalImage"
-                src=""
-                alt="Product PCB">
-
-        </div>
-
-
-        <p class="modal-instruction">
-            Click outside the image or press ESC to close.
-        </p>
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-
-    <div class="footer-logo">
-
-        TraceCore Labs
-
-    </div>
-
-
-    <p>
-
-        PCB Design • Embedded Systems • Electronics Products
-
-    </p>
-
-
-    <div class="footer-links">
-
-        <a href="index.html">
-            Home
+    <footer>
+        <a class="brand" href="index.html" aria-label="TraceCore Labs home">
+            <img src="logo-original-black.png" alt="">
+            <span>TraceCore Labs</span>
         </a>
+        <p>PCB Design / Embedded Systems / Electronics Products</p>
+    </footer>
 
-        <a href="products.html">
-            Products
-        </a>
+    <script>
+        const previewSheet = document.getElementById("previewSheet");
+        const previewImage = document.getElementById("previewImage");
+        const previewTitle = document.getElementById("previewTitle");
+        const closeButton = previewSheet.querySelector(".sheet-close");
 
-        <a href="index.html#contact">
-            Contact
-        </a>
+        document.querySelectorAll(".catalog-card[data-image]").forEach(function(card) {
+            card.addEventListener("click", function() {
+                previewImage.src = card.dataset.image;
+                previewImage.alt = card.dataset.title + " PCB preview";
+                previewTitle.textContent = card.dataset.title;
+                previewSheet.hidden = false;
+                previewSheet.setAttribute("aria-hidden", "false");
+                closeButton.tabIndex = 0;
+                document.body.classList.add("sheet-open");
+                closeButton.focus();
+            });
+        });
 
-    </div>
-
-
-    <p class="copyright">
-
-        © 2026 TraceCore Labs.
-        All Rights Reserved.
-
-    </p>
-
-
-</footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script>
-
-
-/* =====================================================
-   OPEN PRODUCT IMAGE
-===================================================== */
-
-function openProduct(imagePath, title) {
-
-    const modal =
-        document.getElementById("productModal");
-
-    const image =
-        document.getElementById("modalImage");
-
-    const titleElement =
-        document.getElementById("modalTitle");
-
-
-    image.src = imagePath;
-
-    image.alt = title;
-
-    titleElement.textContent = title;
-
-
-    modal.classList.add("show");
-
-    document.body.classList.add("modal-open");
-
-}
-
-
-
-/* =====================================================
-   CLOSE PRODUCT IMAGE
-===================================================== */
-
-function closeProduct(event) {
-
-
-    const modal =
-        document.getElementById("productModal");
-
-
-    /*
-       If user clicks inside the modal
-       content, don't close it.
-    */
-
-    if (
-        event &&
-        event.target !== modal
-    ) {
-
-        return;
-
-    }
-
-
-    modal.classList.remove("show");
-
-    document.body.classList.remove("modal-open");
-
-
-    /*
-       Clear image after closing
-    */
-
-    setTimeout(function() {
-
-        document.getElementById("modalImage").src = "";
-
-    }, 300);
-
-}
-
-
-
-/* =====================================================
-   ESCAPE KEY
-===================================================== */
-
-document.addEventListener(
-    "keydown",
-    function(event) {
-
-
-        if (event.key === "Escape") {
-
-            const modal =
-                document.getElementById("productModal");
-
-
-            modal.classList.remove("show");
-
-            document.body.classList.remove("modal-open");
-
+        function closePreview() {
+            previewSheet.hidden = true;
+            previewSheet.setAttribute("aria-hidden", "true");
+            closeButton.tabIndex = -1;
+            document.body.classList.remove("sheet-open");
         }
 
-    }
-);
+        closeButton.addEventListener("click", closePreview);
 
-</script>
+        previewSheet.addEventListener("click", function(event) {
+            if (event.target === previewSheet) {
+                closePreview();
+            }
+        });
 
-
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape" && !previewSheet.hidden) {
+                closePreview();
+            }
+        });
+    </script>
 </body>
 
 </html>
