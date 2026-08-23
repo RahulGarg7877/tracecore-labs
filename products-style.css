@@ -1,0 +1,1012 @@
+/* =====================================================
+   TRACECORE LABS
+   PRODUCTS PAGE
+===================================================== */
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #070b14;
+
+    color: white;
+
+    line-height: 1.6;
+
+}
+
+
+/* Prevent scrolling while image modal is open */
+
+body.modal-open {
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 45px;
+
+    background: rgba(13, 19, 36, 0.97);
+
+    border-bottom: 1px solid rgba(0, 212, 255, 0.12);
+
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo a {
+
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+}
+
+
+.logo img {
+
+    width: 42px;
+
+    height: 42px;
+
+    object-fit: contain;
+
+    margin-right: 10px;
+
+}
+
+
+.logo span {
+
+    color: #00d4ff;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+nav a {
+
+    margin-left: 28px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    color: #ff7b00;
+
+}
+
+
+nav a.active {
+
+    color: #ff7b00;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.products-hero {
+
+    min-height: 430px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+
+        linear-gradient(
+            rgba(7, 11, 20, 0.80),
+            rgba(7, 11, 20, 0.94)
+        ),
+
+        url("background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.hero-content {
+
+    max-width: 900px;
+
+}
+
+
+.small-title {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #00d4ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+
+.products-hero h1 {
+
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+    color: #ff7b00;
+
+    margin-bottom: 20px;
+
+    line-height: 1.1;
+
+}
+
+
+.products-hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #d5d9e2;
+
+    font-size: 18px;
+
+}
+
+
+/* =====================================================
+   PRODUCTS SECTION
+===================================================== */
+
+.products-section {
+
+    padding: 100px 6%;
+
+}
+
+
+.section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.section-heading span {
+
+    color: #00d4ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.section-heading h2 {
+
+    margin: 10px 0;
+
+    font-size: 40px;
+
+}
+
+
+.section-heading p {
+
+    color: #9fa8b7;
+
+}
+
+
+/* =====================================================
+   PRODUCTS GRID
+===================================================== */
+
+.products-grid {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: 30px;
+
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.product-card {
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #111a2e,
+            #0d1324
+        );
+
+    border: 1px solid
+        rgba(0, 212, 255, 0.12);
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color:
+        rgba(255, 123, 0, 0.7);
+
+    box-shadow:
+        0 20px 45px
+        rgba(255, 123, 0, 0.15);
+
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.product-image {
+
+    height: 290px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background: #02050a;
+
+    overflow: hidden;
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+
+}
+
+
+.product-card:hover
+.product-image img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =====================================================
+   PRODUCT CONTENT
+===================================================== */
+
+.product-content {
+
+    padding: 25px;
+
+}
+
+
+.product-category {
+
+    display: inline-block;
+
+    color: #00d4ff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.product-content h3 {
+
+    margin: 8px 0 12px;
+
+    font-size: 24px;
+
+}
+
+
+.product-content p {
+
+    min-height: 75px;
+
+    color: #aeb7c7;
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   PRODUCT BUTTON
+===================================================== */
+
+.product-content button {
+
+    margin-top: 18px;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #ff7b00;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.product-content button:hover {
+
+    background: #ff8f26;
+
+    transform: translateX(4px);
+
+}
+
+
+/* =====================================================
+   CUSTOM PCB CARD
+===================================================== */
+
+.custom-product {
+
+    border:
+        1px dashed
+        rgba(0, 212, 255, 0.5);
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(0, 212, 255, 0.08),
+            #111a2e
+        );
+
+}
+
+
+.custom-product-icon {
+
+    height: 290px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #00d4ff;
+
+    font-size: 120px;
+
+    font-weight: 200;
+
+    background:
+        rgba(0, 212, 255, 0.03);
+
+}
+
+
+.custom-button {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 11px 20px;
+
+    border-radius: 6px;
+
+    background: #ff7b00;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.custom-button:hover {
+
+    background: #ff8f26;
+
+    transform: translateX(4px);
+
+}
+
+
+/* =====================================================
+   CUSTOM PCB SECTION
+===================================================== */
+
+.custom-section {
+
+    padding: 100px 6%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0d1324,
+            #080d18
+        );
+
+    border-top:
+        1px solid
+        rgba(0, 212, 255, 0.08);
+
+    border-bottom:
+        1px solid
+        rgba(0, 212, 255, 0.08);
+
+}
+
+
+.custom-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.custom-text h2 {
+
+    margin: 12px 0 20px;
+
+    font-size: clamp(2rem, 4vw, 3.3rem);
+
+    line-height: 1.15;
+
+}
+
+
+.custom-text p {
+
+    color: #aeb7c7;
+
+    max-width: 600px;
+
+}
+
+
+.quote-button {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    background: #ff7b00;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.quote-button:hover {
+
+    background: #ff8f26;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =====================================================
+   CUSTOM PCB PROCESS
+===================================================== */
+
+.custom-process {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.process-step {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 17px 22px;
+
+    background: #111a2e;
+
+    border:
+        1px solid
+        rgba(0, 212, 255, 0.12);
+
+    border-radius: 10px;
+
+}
+
+
+.process-step strong {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 123, 0, 0.12);
+
+    color: #ff7b00;
+
+}
+
+
+.process-step span {
+
+    color: #e7eaf0;
+
+    font-weight: 600;
+
+}
+
+
+.process-line {
+
+    width: 2px;
+
+    height: 10px;
+
+    margin-left: 43px;
+
+    background: #00d4ff;
+
+    opacity: 0.35;
+
+}
+
+
+/* =====================================================
+   IMAGE MODAL
+===================================================== */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background:
+        rgba(0, 0, 0, 0.92);
+
+}
+
+
+.modal.show {
+
+    display: flex;
+
+}
+
+
+.modal-content {
+
+    max-width: 1100px;
+
+    max-height: 90vh;
+
+    text-align: center;
+
+}
+
+
+.modal-content h2 {
+
+    margin-bottom: 20px;
+
+    color: #ff7b00;
+
+    font-size: 28px;
+
+}
+
+
+.modal-content img {
+
+    max-width: 90vw;
+
+    max-height: 78vh;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 0 50px
+        rgba(0, 212, 255, 0.12);
+
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
+
+.close-button {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 30px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 42px;
+
+    cursor: pointer;
+
+    z-index: 1001;
+
+}
+
+
+.close-button:hover {
+
+    color: #ff7b00;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: #0d1324;
+
+}
+
+
+.footer-logo {
+
+    margin-bottom: 8px;
+
+    color: #00d4ff;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+}
+
+
+footer p {
+
+    color: #9fa8b7;
+
+}
+
+
+footer .copyright {
+
+    margin-top: 12px;
+
+    font-size: 13px;
+
+    color: #687285;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    header {
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 8px;
+
+    }
+
+
+    nav a {
+
+        margin: 0 7px;
+
+    }
+
+
+    .products-hero {
+
+        min-height: 360px;
+
+    }
+
+
+    .products-section {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .custom-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .logo span {
+
+        font-size: 19px;
+
+    }
+
+
+    nav a {
+
+        font-size: 13px;
+
+    }
+
+
+    .products-hero h1 {
+
+        font-size: 2.4rem;
+
+    }
+
+
+    .products-hero p {
+
+        font-size: 15px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .product-image,
+    .custom-product-icon {
+
+        height: 230px;
+
+    }
+
+
+    .product-content h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .custom-section {
+
+        padding: 70px 20px;
+
+    }
+
+}
