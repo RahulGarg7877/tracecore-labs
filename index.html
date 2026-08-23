@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +11,7 @@
     <meta name="description"
           content="TraceCore Labs - PCB Design, Embedded Systems, Electronics Products and Custom PCB Development.">
 
-    <meta name="keywords"
-          content="PCB Design, Embedded Systems, Flight Controller, ESC, Custom PCB, Electronics, TraceCore Labs">
-
-    <title>TraceCore Labs | PCB & Embedded Electronics</title>
+    <title>TraceCore Labs | Electronics & PCB Solutions</title>
 
     <link rel="stylesheet"
           href="style.css">
@@ -27,17 +23,17 @@
 
 
 <!-- =====================================================
-     NAVIGATION BAR
+     NAVBAR
 ===================================================== -->
 
-<header>
+<header class="navbar">
 
     <div class="logo">
 
         <a href="index.html">
 
             <img src="logo.png"
-                 alt="TraceCore Labs Logo">
+                 alt="TraceCore Labs">
 
             <span>
                 TraceCore Labs
@@ -50,7 +46,8 @@
 
     <nav>
 
-        <a href="index.html">
+        <a href="index.html"
+           class="active">
             Home
         </a>
 
@@ -72,55 +69,126 @@
 
     </nav>
 
+
+    <a href="#contact"
+       class="nav-quote">
+
+        Get a Quote
+
+    </a>
+
 </header>
 
 
 
 <!-- =====================================================
-     HERO SECTION
+     HERO
 ===================================================== -->
 
 <section class="hero">
 
+    <div class="hero-overlay"></div>
+
+
     <div class="hero-content">
 
-        <span class="hero-small-title">
-            TRACECORE LABS
-        </span>
+
+        <div class="hero-badge">
+
+            PCB DESIGN
+            <span>•</span>
+            EMBEDDED SYSTEMS
+            <span>•</span>
+            ELECTRONICS
+
+        </div>
 
 
         <h1>
-            Precision PCB Design
+
+            Engineering Electronics
             <br>
-            & Embedded Solutions
+
+            <span>
+                For Real-World Applications
+            </span>
+
         </h1>
 
 
         <p>
-            Building powerful electronics
-            for real-world applications.
+
+            From custom PCB design to embedded systems
+            and electronics products — we turn engineering
+            requirements into reliable hardware.
+
         </p>
 
 
         <div class="hero-buttons">
 
+
             <a href="products.html"
-               class="hero-button primary">
+               class="btn btn-primary">
 
                 Explore Products
 
             </a>
 
 
-            <button
-                onclick="scrollToContact()"
-                class="hero-button secondary">
+            <a href="#contact"
+               class="btn btn-outline">
 
-                Get Your PCB Designed
+                Get a Custom PCB
 
-            </button>
+            </a>
+
 
         </div>
+
+
+        <div class="hero-trust">
+
+            <div>
+
+                <strong>
+                    PCB
+                </strong>
+
+                <span>
+                    Design
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    EMBEDDED
+                </strong>
+
+                <span>
+                    Systems
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    CUSTOM
+                </strong>
+
+                <span>
+                    Electronics
+                </span>
+
+            </div>
+
+        </div>
+
 
     </div>
 
@@ -129,44 +197,137 @@
 
 
 <!-- =====================================================
-     SERVICES SECTION
+     QUICK SERVICES
+===================================================== -->
+
+<section class="quick-section">
+
+    <div class="quick-container">
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                PCB
+            </div>
+
+            <div>
+
+                <h3>
+                    PCB Design
+                </h3>
+
+                <p>
+                    Schematic to production-ready PCB
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                MCU
+            </div>
+
+            <div>
+
+                <h3>
+                    Embedded Systems
+                </h3>
+
+                <p>
+                    Hardware and firmware development
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                PRO
+            </div>
+
+            <div>
+
+                <h3>
+                    Prototyping
+                </h3>
+
+                <p>
+                    Prototype, test and validate
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                QC
+            </div>
+
+            <div>
+
+                <h3>
+                    Testing
+                </h3>
+
+                <p>
+                    Debugging and hardware validation
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
 ===================================================== -->
 
 <section id="services"
-         class="services-section">
+         class="section services-section">
 
 
-    <div class="section-heading">
+    <div class="section-header">
 
         <span>
-            WHAT WE DO
+            OUR CAPABILITIES
         </span>
 
-
         <h2>
-            Our Services
+            What We Do
         </h2>
 
-
         <p>
-            From PCB design to embedded systems,
-            we develop electronics for real-world applications.
+            Complete electronics development for
+            your next product or engineering project.
         </p>
 
     </div>
 
 
+    <div class="service-grid">
 
-    <div class="cards">
 
+        <div class="service-card">
 
-        <!-- PCB DESIGN -->
-
-        <a href="pcb.html"
-           class="card">
-
-            <div class="card-icon">
-                🔧
+            <div class="service-number">
+                01
             </div>
 
             <h3>
@@ -174,20 +335,21 @@
             </h3>
 
             <p>
-                Professional PCB design and layout
-                for embedded and electronic systems.
+                Schematic design, component selection,
+                PCB layout, routing and design review.
             </p>
 
-        </a>
+            <a href="pcb.html">
+                Learn More →
+            </a>
+
+        </div>
 
 
+        <div class="service-card">
 
-        <!-- EMBEDDED -->
-
-        <div class="card">
-
-            <div class="card-icon">
-                ⚡
+            <div class="service-number">
+                02
             </div>
 
             <h3>
@@ -195,41 +357,43 @@
             </h3>
 
             <p>
-                Hardware and firmware development
-                for microcontroller-based applications.
+                Microcontroller hardware, firmware,
+                communication interfaces and system integration.
             </p>
+
+            <a href="#contact">
+                Discuss Your Project →
+            </a>
 
         </div>
 
 
+        <div class="service-card">
 
-        <!-- ROBOTICS -->
-
-        <div class="card">
-
-            <div class="card-icon">
-                🤖
+            <div class="service-number">
+                03
             </div>
 
             <h3>
-                Robotics Solutions
+                Custom Electronics
             </h3>
 
             <p>
-                Electronics for drones, UGVs,
-                robotics and automation systems.
+                Complete custom electronics development
+                according to your application requirements.
             </p>
+
+            <a href="#contact">
+                Start a Project →
+            </a>
 
         </div>
 
 
+        <div class="service-card">
 
-        <!-- DEBUGGING -->
-
-        <div class="card">
-
-            <div class="card-icon">
-                🔍
+            <div class="service-number">
+                04
             </div>
 
             <h3>
@@ -237,9 +401,13 @@
             </h3>
 
             <p>
-                Hardware debugging, testing and
-                electronics validation.
+                Hardware bring-up, debugging,
+                testing and design validation.
             </p>
+
+            <a href="#contact">
+                Contact Us →
+            </a>
 
         </div>
 
@@ -251,51 +419,46 @@
 
 
 <!-- =====================================================
-     FEATURED PRODUCTS
+     PRODUCTS
 ===================================================== -->
 
-<section class="featured-section">
+<section class="section products-section">
 
 
-    <div class="section-heading">
+    <div class="section-header">
 
         <span>
             TRACECORE PRODUCTS
         </span>
 
-
         <h2>
-            Featured Electronics
+            Built Electronics
         </h2>
 
-
         <p>
-            Explore our PCB solutions designed for
-            UAVs, robotics, motor control and automation.
+            Explore our growing range of PCB products
+            for UAVs, robotics, motor control and automation.
         </p>
 
     </div>
 
 
-
-    <div class="featured-grid">
+    <div class="product-grid">
 
 
         <!-- FLIGHT CONTROLLER -->
 
         <a href="products.html"
-           class="featured-card">
+           class="home-product">
 
-            <div class="featured-image">
+            <div class="home-product-image">
 
-                <img
-                    src="products/flight-controller.png"
-                    alt="TraceCore Flight Controller">
+                <img src="products/flight-controller.png"
+                     alt="Flight Controller">
 
             </div>
 
-
-            <div class="featured-content">
+            <div class="home-product-info">
 
                 <span>
                     UAV ELECTRONICS
@@ -323,18 +486,16 @@
         <!-- BIDIRECTIONAL ESC -->
 
         <a href="products.html"
-           class="featured-card">
+           class="home-product">
 
-            <div class="featured-image">
+            <div class="home-product-image">
 
-                <img
-                    src="products/esc-bidirectional.png"
-                    alt="TraceCore Bidirectional ESC">
+                <img src="products/esc-bidirectional.png"
+                     alt="Bidirectional ESC">
 
             </div>
 
-
-            <div class="featured-content">
+            <div class="home-product-info">
 
                 <span>
                     MOTOR CONTROL
@@ -345,8 +506,8 @@
                 </h3>
 
                 <p>
-                    Reversible motor-control electronics
-                    for robotics and embedded applications.
+                    Reversible motor-control
+                    electronics.
                 </p>
 
                 <strong>
@@ -359,33 +520,31 @@
 
 
 
-        <!-- ROCKET FLIGHT CONTROLLER -->
+        <!-- UNIDIRECTIONAL ESC -->
 
         <a href="products.html"
-           class="featured-card">
+           class="home-product">
 
-            <div class="featured-image">
+            <div class="home-product-image">
 
-                <img
-                    src="products/rocket-flight-controller.png"
-                    alt="Rocket Flight Controller">
+                <img src="products/esc-unidirectional.png"
+                     alt="Unidirectional ESC">
 
             </div>
 
-
-            <div class="featured-content">
+            <div class="home-product-info">
 
                 <span>
-                    AEROSPACE ELECTRONICS
+                    MOTOR CONTROL
                 </span>
 
                 <h3>
-                    Rocket Flight Controller
+                    Unidirectional ESC
                 </h3>
 
                 <p>
-                    Dedicated flight-control electronics
-                    for experimental aerospace applications.
+                    Single-direction electronic
+                    speed controller.
                 </p>
 
                 <strong>
@@ -398,33 +557,31 @@
 
 
 
-        <!-- RELAY MODULE -->
+        <!-- RELAY -->
 
         <a href="products.html"
-           class="featured-card">
+           class="home-product">
 
-            <div class="featured-image">
+            <div class="home-product-image">
 
-                <img
-                    src="products/four-channel-relay.png"
-                    alt="4 Channel Relay Module">
+                <img src="products/four-channel-relay.png"
+                     alt="4 Channel Relay Module">
 
             </div>
 
-
-            <div class="featured-content">
+            <div class="home-product-info">
 
                 <span>
                     CONTROL ELECTRONICS
                 </span>
 
                 <h3>
-                    4-Channel Relay Module
+                    4-Channel Relay
                 </h3>
 
                 <p>
-                    Four-channel relay control
-                    for embedded and automation systems.
+                    Relay control board for
+                    automation and embedded systems.
                 </p>
 
                 <strong>
@@ -439,52 +596,63 @@
     </div>
 
 
+    <div class="center-button">
 
-    <div class="products-button">
+        <a href="products.html"
+           class="btn btn-primary">
 
-        <a href="products.html">
             View All Products →
+
         </a>
 
     </div>
+
 
 </section>
 
 
 
 <!-- =====================================================
-     CUSTOM PCB SECTION
+     CUSTOM PCB
 ===================================================== -->
 
-<section class="custom-home-section">
+<section class="custom-section">
 
 
-    <div class="custom-home-container">
+    <div class="custom-container">
 
 
-        <div class="custom-home-text">
+        <div class="custom-left">
 
             <span>
-                CUSTOM ELECTRONICS
+                CUSTOM PCB DEVELOPMENT
             </span>
 
 
             <h2>
-                Have a Unique
+
+                Have a unique
                 <br>
-                PCB Requirement?
+
+                <strong>
+                    electronics requirement?
+                </strong>
+
             </h2>
 
 
             <p>
-                We design custom PCBs according to
-                your electrical, mechanical and
-                application requirements.
+
+                Tell us what you need.
+                We design the PCB around your
+                application, dimensions, components,
+                interfaces and electrical requirements.
+
             </p>
 
 
             <a href="#contact"
-               class="custom-home-button">
+               class="btn btn-primary">
 
                 Start Your Project →
 
@@ -493,40 +661,105 @@
         </div>
 
 
-        <div class="custom-home-process">
+
+        <div class="custom-right">
 
 
-            <div>
-                <strong>01</strong>
-                <span>Requirement</span>
+            <div class="custom-step">
+
+                <strong>
+                    01
+                </strong>
+
+                <div>
+
+                    <h3>
+                        Requirement
+                    </h3>
+
+                    <p>
+                        Understand your application.
+                    </p>
+
+                </div>
+
             </div>
 
 
-            <div>
-                <strong>02</strong>
-                <span>Schematic</span>
+            <div class="custom-line"></div>
+
+
+            <div class="custom-step">
+
+                <strong>
+                    02
+                </strong>
+
+                <div>
+
+                    <h3>
+                        Design
+                    </h3>
+
+                    <p>
+                        Schematic and PCB development.
+                    </p>
+
+                </div>
+
             </div>
 
 
-            <div>
-                <strong>03</strong>
-                <span>PCB Design</span>
+            <div class="custom-line"></div>
+
+
+            <div class="custom-step">
+
+                <strong>
+                    03
+                </strong>
+
+                <div>
+
+                    <h3>
+                        Prototype
+                    </h3>
+
+                    <p>
+                        Manufacture and assemble.
+                    </p>
+
+                </div>
+
             </div>
 
 
-            <div>
-                <strong>04</strong>
-                <span>Prototype</span>
-            </div>
+            <div class="custom-line"></div>
 
 
-            <div>
-                <strong>05</strong>
-                <span>Testing</span>
+            <div class="custom-step">
+
+                <strong>
+                    04
+                </strong>
+
+                <div>
+
+                    <h3>
+                        Test
+                    </h3>
+
+                    <p>
+                        Validate the hardware.
+                    </p>
+
+                </div>
+
             </div>
 
 
         </div>
+
 
     </div>
 
@@ -535,64 +768,91 @@
 
 
 <!-- =====================================================
-     PORTFOLIO SECTION
+     PORTFOLIO
 ===================================================== -->
 
 <section id="portfolio"
-         class="portfolio-section">
+         class="section portfolio-section">
 
 
-    <div class="section-heading">
+    <div class="section-header">
 
         <span>
-            OUR WORK
+            ENGINEERING WORK
         </span>
 
-
         <h2>
-            Engineering Portfolio
+            Selected Applications
         </h2>
 
-
         <p>
-            Electronics developed for drones,
-            robotics, embedded systems and
+            Electronics developed for demanding
             real-world applications.
         </p>
 
     </div>
 
 
+    <div class="application-grid">
 
-    <div class="cards">
 
+        <div class="application-card">
 
-        <!-- UGV -->
-
-        <div class="card">
-
-            <div class="card-icon">
-                🤖
+            <div>
+                🚁
             </div>
 
             <h3>
-                UGV System
+                UAV & Drones
             </h3>
 
             <p>
-                Embedded control electronics
-                for unmanned ground vehicles.
+                Flight-control and supporting
+                electronics for unmanned systems.
             </p>
 
         </div>
 
 
+        <div class="application-card">
 
-        <!-- SENSOR -->
+            <div>
+                🤖
+            </div>
 
-        <div class="card">
+            <h3>
+                Robotics
+            </h3>
 
-            <div class="card-icon">
+            <p>
+                Motor control, sensor interfaces
+                and embedded control systems.
+            </p>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <div>
+                ⚙
+            </div>
+
+            <h3>
+                Industrial Electronics
+            </h3>
+
+            <p>
+                Control boards, power electronics
+                and automation solutions.
+            </p>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <div>
                 📡
             </div>
 
@@ -601,50 +861,8 @@
             </h3>
 
             <p>
-                Sensor interface and
-                environmental monitoring electronics.
-            </p>
-
-        </div>
-
-
-
-        <!-- POWER -->
-
-        <div class="card">
-
-            <div class="card-icon">
-                ⚡
-            </div>
-
-            <h3>
-                Power Electronics
-            </h3>
-
-            <p>
-                Power distribution, regulation
-                and motor-control electronics.
-            </p>
-
-        </div>
-
-
-
-        <!-- DRONE -->
-
-        <div class="card">
-
-            <div class="card-icon">
-                🚁
-            </div>
-
-            <h3>
-                UAV Electronics
-            </h3>
-
-            <p>
-                Flight-control and supporting
-                electronics for UAV applications.
+                Sensor acquisition, communication
+                and data logging electronics.
             </p>
 
         </div>
@@ -657,100 +875,108 @@
 
 
 <!-- =====================================================
-     WHY TRACECORE
+     HOW WE WORK
 ===================================================== -->
 
-<section class="why-section">
+<section class="process-section">
 
 
-    <div class="section-heading">
+    <div class="section-header">
 
         <span>
-            WHY TRACECORE LABS
+            OUR PROCESS
         </span>
 
-
         <h2>
-            Engineering With Purpose
+            From Idea to Hardware
         </h2>
 
     </div>
 
 
+    <div class="process-grid">
 
-    <div class="why-grid">
 
-
-        <div class="why-card">
+        <div class="process-card">
 
             <div>
                 01
             </div>
 
             <h3>
-                Engineering First
+                Discuss
             </h3>
 
             <p>
-                Electronics designed with
-                real-world deployment in mind.
+                Understand your requirements.
             </p>
 
         </div>
 
 
-
-        <div class="why-card">
+        <div class="process-card">
 
             <div>
                 02
             </div>
 
             <h3>
-                Custom Solutions
+                Design
             </h3>
 
             <p>
-                Hardware tailored to your
-                exact application requirements.
+                Develop schematic and PCB.
             </p>
 
         </div>
 
 
-
-        <div class="why-card">
+        <div class="process-card">
 
             <div>
                 03
             </div>
 
             <h3>
-                Prototype to Product
+                Prototype
             </h3>
 
             <p>
-                From initial concept and PCB
-                design to prototype and testing.
+                Manufacture the first board.
             </p>
 
         </div>
 
 
-
-        <div class="why-card">
+        <div class="process-card">
 
             <div>
                 04
             </div>
 
             <h3>
-                Embedded Expertise
+                Test
             </h3>
 
             <p>
-                Hardware and firmware developed
-                together for reliable systems.
+                Validate hardware performance.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div>
+                05
+            </div>
+
+            <h3>
+                Deliver
+            </h3>
+
+            <p>
+                Prepare the final solution.
             </p>
 
         </div>
@@ -763,89 +989,67 @@
 
 
 <!-- =====================================================
-     CONTACT SECTION
+     CONTACT
 ===================================================== -->
 
 <section id="contact"
          class="contact-section">
 
 
-    <div class="section-heading">
-
-        <span>
-            GET IN TOUCH
-        </span>
-
-
-        <h2>
-            Start Your Project
-        </h2>
-
-
-        <p>
-            Have a PCB idea or electronics requirement?
-            Let's discuss your project.
-        </p>
-
-    </div>
-
-
-
     <div class="contact-container">
 
 
-        <div class="contact-info">
+        <div class="contact-left">
+
+            <span>
+                GET STARTED
+            </span>
 
 
-            <h3>
-                TraceCore Labs
-            </h3>
+            <h2>
+                Let's Build Your
+                <br>
+                Electronics Solution.
+            </h2>
 
 
             <p>
-                PCB Design • Embedded Systems
-                • Electronics Products
+                Have a PCB idea, embedded system
+                requirement or custom electronics project?
+                Contact TraceCore Labs.
             </p>
 
 
-            <div class="contact-item">
-
-                <strong>
-                    Email
-                </strong>
-
-                <a href="mailto:tracecorelabs@gmail.com">
-                    tracecorelabs@gmail.com
-                </a>
-
-            </div>
+            <div class="contact-details">
 
 
-            <div class="contact-item">
+                <div>
 
-                <strong>
-                    Email
-                </strong>
+                    <strong>
+                        Email
+                    </strong>
 
-                <a href="mailto:rg97506@gmail.com">
-                    rg97506@gmail.com
-                </a>
+                    <a href="mailto:tracecorelabs@gmail.com">
+                        tracecorelabs@gmail.com
+                    </a>
 
-            </div>
+                </div>
 
 
-            <div class="contact-item">
+                <div>
 
-                <strong>
-                    Phone
-                </strong>
+                    <strong>
+                        Phone
+                    </strong>
 
-                <a href="tel:+917850973515">
-                    +91 7850973515
-                </a>
+                    <a href="tel:+917850973515">
+                        +91 7850973515
+                    </a>
+
+                </div>
+
 
             </div>
-
 
         </div>
 
@@ -855,37 +1059,34 @@
 
 
             <h3>
-                Tell Us About Your Project
+                Start a Project
             </h3>
 
 
             <p>
-                Contact us for custom PCB design,
-                electronics development or product enquiries.
+                Tell us what you're building
+                and we'll discuss the next step.
             </p>
 
 
-            <div class="contact-buttons">
+            <a
+                href="mailto:tracecorelabs@gmail.com?subject=TraceCore%20Labs%20Project%20Enquiry"
+                class="contact-button">
 
-                <a
-                    href="mailto:tracecorelabs@gmail.com?subject=PCB%20Project%20Enquiry"
-                    class="contact-button primary">
+                Send Project Enquiry →
 
-                    Email Us
-
-                </a>
+            </a>
 
 
-                <a
-                    href="https://wa.me/917850973515"
-                    target="_blank"
-                    class="contact-button whatsapp">
+            <a
+                href="https://wa.me/917850973515"
+                target="_blank"
+                class="whatsapp-button">
 
-                    WhatsApp
+                Chat on WhatsApp
 
-                </a>
+            </a>
 
-            </div>
 
         </div>
 
@@ -903,18 +1104,21 @@
 <footer>
 
 
-    <div class="footer-logo">
+    <div class="footer-brand">
 
-        TraceCore Labs
+        <img src="logo.png"
+             alt="TraceCore Labs">
+
+        <strong>
+            TraceCore Labs
+        </strong>
 
     </div>
 
 
     <p>
-
         PCB Design • Embedded Systems •
         Electronics Products
-
     </p>
 
 
@@ -954,29 +1158,6 @@
 </footer>
 
 
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script>
-
-function scrollToContact() {
-
-    document
-        .getElementById("contact")
-        .scrollIntoView({
-
-            behavior: "smooth"
-
-        });
-
-}
-
-</script>
-
-
 </body>
 
 </html>
-```
